@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <servlet>
+    <servlet-name>GetDBResult</servlet-name>
+    <servlet-class>soccerServlet.GetDBResult</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EditDBResult</servlet-name>
+    <servlet-class>soccerServlet.EditDBResult</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>GetDBResult</servlet-name>
+    <url-pattern>/W002_ShiaiKekkaItiran</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDBResult</servlet-name>
+    <url-pattern>/W003_TeamShousai</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDBResult</servlet-name>
+    <url-pattern>/W004_ScoreShousai</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDBResult</servlet-name>
+    <url-pattern>/W005_Hensyu</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDBResult</servlet-name>
+    <url-pattern>/W006_KousinSakujo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditDBResult</servlet-name>
+    <url-pattern>/W007_Kanryou</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDBResult</servlet-name>
+    <url-pattern>/W009_MasterTouroku</url-pattern>
+  </servlet-mapping>
+</web-app>
