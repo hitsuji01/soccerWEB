@@ -1,0 +1,207 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<% request.setCharacterEncoding("UTF-8"); %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<link rel="Stylesheet" href="${pageContext.request.contextPath}/Style.css" type="text/css">
+
+	<script type="text/javascript">
+		function setValue(val) {
+			document.form1.sub_val.value = val;
+			document.form1.setsu.value = val;
+		}
+	</script>
+
+</head>
+<body>
+ 	<!-- コンテナ開始 -->
+	<div id="container">
+
+		<!-- ヘッダ開始 -->
+		<jsp:include page="W000_Header.jsp">
+ 			<jsp:param name="title" value="試合一覧"/>
+ 		</jsp:include>
+		<!-- ヘッダ終了 -->
+
+
+		<!-- コンテンツ開始 -->
+		<div id="content">
+			<br>
+			<h2>試合一覧</h2>
+			<div id="ShiaiItiran">
+			<form name="form1" method="post" action="W002_ShiaiKekkaItiran">
+			<INPUT type="hidden" name="sub_val">
+			<INPUT type="hidden" name="setsu">
+			<INPUT type="hidden" name="sql_type" value="select">
+			<INPUT type="hidden" name="to_name" value="W002_ShiaiKekkaItiran.jsp">
+			<TABLE border="1" width="100%">
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="1"  onClick="setValue(this.value)">第１節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="20"  onClick="setValue(this.value)">第２０節</BUTTON>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="2"  onClick="setValue(this.value)">第２節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="21"  onClick="setValue(this.value)">第２１節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="3"  onClick="setValue(this.value)">第３節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="22"  onClick="setValue(this.value)">第２２節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="4"  onClick="setValue(this.value)">第４節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="23"  onClick="setValue(this.value)">第２３節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="5"  onClick="setValue(this.value)">第５節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="24"  onClick="setValue(this.value)">第２４節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="6"  onClick="setValue(this.value)">第６節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="25"  onClick="setValue(this.value)">第２５節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="7"  onClick="setValue(this.value)">第７節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="26"  onClick="setValue(this.value)">第２６節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="8"  onClick="setValue(this.value)">第８節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="27"  onClick="setValue(this.value)">第２７節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="9"  onClick="setValue(this.value)">第９節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="28"  onClick="setValue(this.value)">第２８節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="10"  onClick="setValue(this.value)">第１０節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="29"  onClick="setValue(this.value)">第２９節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="11"  onClick="setValue(this.value)">第１１節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="30"  onClick="setValue(this.value)">第３０節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="12"  onClick="setValue(this.value)">第１２節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="31"  onClick="setValue(this.value)">第３１節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="13"  onClick="setValue(this.value)">第１３節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="32"  onClick="setValue(this.value)">第３２節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="14"  onClick="setValue(this.value)">第１４節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="33"  onClick="setValue(this.value)">第３３節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="15"  onClick="setValue(this.value)">第１５節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="34"  onClick="setValue(this.value)">第３４節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="16"  onClick="setValue(this.value)">第１６節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="35"  onClick="setValue(this.value)">第３５節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="17"  onClick="setValue(this.value)">第１７節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="36"  onClick="setValue(this.value)">第３６節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="18"  onClick="setValue(this.value)">第１８節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="37"  onClick="setValue(this.value)">第３７節</BUTTON>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="19"  onClick="setValue(this.value)">第１９節</BUTTON>
+				</td>
+				<td>
+					<BUTTON class="setsu_button" type="submit" value="38"  onClick="setValue(this.value)">第３８節</BUTTON>
+				</td>
+			</tr>
+			</TABLE>
+			</form>
+			</div>
+		</div>
+		<!-- コンテンツ終了 -->
+
+
+		<!-- フッタ開始 -->
+		<jsp:include page="W000_Footer.jsp"/>
+		<!-- フッタ終了 -->
+
+
+	</div>
+	<!-- コンテナ終了 -->
+
+</body>
+</html>
