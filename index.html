@@ -22,14 +22,14 @@
  			<jsp:param name="title" value="試合一覧"/>
  		</jsp:include>
 		<!-- ヘッダ終了 -->
-		<script src="header.js"></script>
+		<!--#include virtual="/header.html" -->
 
 		<!-- コンテンツ開始 -->
 		<div id="content">
 			<br>
 			<h2>試合一覧</h2>
 			<div id="ShiaiItiran">
-			<form name="form1" method="post" action="W002_ShiaiKekkaItiran.html">
+			<form name="form1" method="post" action="/W002_ShiaiKekkaItiran.html">
 			<INPUT type="hidden" name="sub_val">
 			<INPUT type="hidden" name="setsu">
 			<INPUT type="hidden" name="sql_type" value="select">
