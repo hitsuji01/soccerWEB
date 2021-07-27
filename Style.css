@@ -1,0 +1,224 @@
+@CHARSET "UTF-8";
+
+/* --- 全体の背景・テキスト --- */
+html,
+body {
+	margin:  0;
+	padding: 0;
+	height:100%;
+	background-color: #f0f0f0; /* ページの背景色 */
+	color: #000000; /* 全体の文字色 */
+	font-size: 100%; /* 全体の文字サイズ */
+	font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;
+}
+
+/* --- 全体のリンクテキスト --- */
+a:link    { color: #0000ff; }
+a:visited { color: #800080; }
+a:hover   { color: #ff0000; }
+a:active  { color: #ff0000; }
+
+/* --- コンテナ --- */
+#container {
+	background-color: #ffffff;
+	width:  80%;    /* ページの幅 */
+	margin: 0 auto; /* センタリング */
+	position: relative;
+
+	height: auto !important;
+	height: 100%;
+
+	min-height: 100%;
+}
+
+/* --- ヘッダ --- */
+#header {
+	background-color: #91d050; /* ヘッダの背景色 */
+	height: 80px;
+	line-height: 80px;
+}
+
+#header_button {
+	background-color: #ffffff; /* コンテンツの背景色に合わせる */
+}
+
+#header_button .menu_button {
+	width: 150px; /* ヘッダーのボタンサイズ(横) */
+	height: 50px; /* ヘッダーのボタンサイズ(縦) */
+	background-color: #e2f0d9;
+	font-weight: bold;
+}
+
+/* --- コンテンツ --- */
+#content {
+	background-color: #ffffff; /* コンテンツの背景色 */
+	padding-bottom: 10em;
+}
+
+#content h2 {
+	margin: 0px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #91d050;
+}
+
+/* --- フッタ --- */
+#footer {
+	background-color: #91d050; /* フッタの背景色 */
+	position: fixed;
+	bottom: 0;
+	width: 80%;
+}
+
+/* --- ページ固有 --- */
+/* --- W001_ShiaiItiran.jsp --- */
+#ShiaiItiran td {
+	width: 50%;
+	height: 50px;
+}
+
+#ShiaiItiran .setsu_button {
+	width: 100%;
+	height: 50px;
+	text-align: left;
+	background-color: #ffffff;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+/* --- W002_ShiaiKekkaItiran.jsp --- */
+#ShiaiKekkaItiran th {
+	background-color: #e2f0d9;
+}
+
+#ShiaiKekkaItiran td {
+	height: 40px;
+	text-align: center;
+	background-color: #ffffff;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+#ShiaiKekkaItiran td BUTTON {
+	width: 100%;
+	height: 40px;
+	background-color: #ffffff;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+
+/* --- W003_TeamShousai.jsp --- */
+#TeamShousai th {
+	background-color: #e2f0d9;
+}
+
+#TeamShousai .Rank td {
+	text-align: center;
+	background-color: #ffffff;
+}
+
+#TeamShousai .ShiaiItiran td {
+	height: 40px;
+	text-align: center;
+	background-color: #ffffff;
+	font-weight: bold;
+	font-size: 110%;
+
+}
+
+#TeamShousai .ShiaiItiran td BUTTON {
+	width: 100%;
+	height: 40px;
+	background-color: #ffffff;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+
+/* --- W004_ScoreShousai.jsp --- */
+#ScoreShousai .Kickoff th {
+	background-color: #e2f0d9;
+}
+
+#ScoreShousai .Kickoff td {
+	text-align: center;
+	background-color: #ffffff;
+}
+
+#ScoreShousai .Shousai th {
+	background-color: #e2f0d9;
+}
+
+#ScoreShousai .Shousai td {
+	height: 60px;
+	text-align: center;
+	font-size: 200%;
+	font-weight: bold;
+	background-color: #ffffff;
+}
+
+#ScoreShousai .Shousai td BUTTON {
+	width: 100%;
+	height: 60px;
+	background-color: #ffffff;
+	font-weight: bold;
+	font-size: 70%;
+}
+
+
+/* --- W005_Hensyu.jsp、W006_KousinSakujo.jsp --- */
+#Hensyu th {
+	background-color: #e2f0d9;
+}
+
+#Hensyu td {
+	text-align: center;
+	background-color: #ffffff;
+}
+
+#Hensyu #insert_table tr {
+	height: 40px;
+}
+
+#Hensyu #update_table tr {
+	height: 40px;
+}
+
+#Hensyu #delete_table tr {
+	height: 40px;
+}
+
+#Hensyu input, select, textarea {
+	font-size: 100%;
+}
+
+#Hensyu #other_table .setsu_button{
+	width: 100%;
+	height: 50px;
+	text-align: left;
+	background-color: #ffffff;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+/* --- W009_MasterTouroku.jsp --- */
+#MasterTouroku th {
+	background-color: #e2f0d9;
+	height: 40px;
+}
+
+#MasterTouroku tr {
+	height: 40px;
+}
+
+#MasterTouroku td {
+	text-align: center;
+	background-color: #ffffff;
+}
+
+#MasterTouroku input, select, textarea {
+	font-size: 100%;
+}
+
+
